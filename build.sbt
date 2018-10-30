@@ -9,9 +9,9 @@ lazy val commonSettings = Seq(
 lazy val spark_dor = (project in file(".")).
   settings(commonSettings: _*)
 
-resolvers in Global += Resolver.mavenLocal
+//resolvers in Global += Resolver.mavenLocal
 
 lazy val dependecies = Seq(
-  "org.apache.spark" %% "spark-core" % "2.3.0" % Provided,
+  "org.apache.spark" %% "spark-core" % "2.2.0" % Provided,
   "org.scalatest" %% "scalatest" % "3.0.5" % Test
 )
